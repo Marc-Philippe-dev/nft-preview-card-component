@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Marc-Philippe-dev/ntf-preview-card-component] 
-- Live Site URL: [https://github.com/marc-philippe-dev.github.io/ntf-preview-card-component] 
+- Live Site URL: [https://marc-philippe-dev.github.io/nft-preview-card-component/] 
 
 ## My process
 
