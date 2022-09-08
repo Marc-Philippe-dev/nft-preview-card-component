@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 3.75rem 0;
+}
+body .container .card {
+  max-width: 20.5625rem;
+  margin: 0 auto 2rem auto;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: hsl(216deg, 50%, 16%);
+}
+body .container .card .image {
+  position: relative;
+}
+body .container .card .image .crypto {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.875rem;
+}
+body .container .card .image .view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178deg, 100%, 50%, 0.6);
+  border-radius: 0.875rem;
+  opacity: 0;
+}
+body .container .card .image .view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+body .container .card .content .title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 1rem;
+}
+body .container .card .content .title:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+body .container .card .content .description {
+  font-weight: 400;
+  color: hsl(215deg, 51%, 70%);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+body .container .card .content .price-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid hsl(215deg, 32%, 27%);
+}
+body .container .card .content .price-time .price {
+  color: hsl(178deg, 100%, 50%);
+  opacity: 1;
+}
+body .container .card .content .price-time .time {
+  color: hsl(0deg, 0%, 100%);
+}
+body .container .card .content .price-time span {
+  vertical-align: 3px;
+}
+body .container .card .content .author {
+  display: flex;
+  align-items: center;
+}
+body .container .card .content .author img {
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+body .container .card .content .author p {
+  color: hsl(215deg, 51%, 70%);
+}
+body .container .card .content .author p .author-name:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+body .container .card .content .author span {
+  color: hsl(0deg, 0%, 100%);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

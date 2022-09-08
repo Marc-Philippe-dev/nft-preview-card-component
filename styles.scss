@@ -1,0 +1,145 @@
+$softBlue: hsl(215, 51%, 70%);
+$cyan : hsl(178, 100%, 50%);
+$cyanTransparent : hsl(178, 100%, 50% , 60%);
+$veryDarkBlueMain : hsl(217, 54%, 11%);
+$veryDarkBlueCard : hsl(216, 50%, 16%);
+$veryDarkBlueLine:  hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $veryDarkBlueMain;
+    font-family: 'Outfit', sans-serif;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding:3.75rem 0;
+        
+        .card{
+            max-width: 20.5625rem;
+            margin: 0 auto 2rem auto;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background-color: $veryDarkBlueCard;
+
+            .image{
+                position: relative;
+                .crypto{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                    border-radius: 0.875rem;
+                }
+
+                .view{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top:0px;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $cyanTransparent ; 
+                    border-radius: 0.875rem ;
+                    opacity: 0;
+                    
+                     
+                }
+
+                .view:hover{
+                    opacity: 1;
+                    cursor: pointer;
+                }
+
+               
+            }
+
+    
+            .content{
+                .title{
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    color: $white;
+                    margin-bottom: 1rem;
+                }
+                .title:hover {
+                    color: $cyan;
+                    cursor: pointer;
+                }
+                .description{
+                    font-weight: 400;
+                    color: $softBlue;
+                    line-height: 1.5;
+                    margin-bottom: 1rem;
+                }
+                .price-time{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 0.5px solid $veryDarkBlueLine;
+                   
+                    .price{
+                        color: $cyan;
+                        opacity: 1;
+                    }
+                    .time{
+                        color: $white;
+                    }
+                    span{
+                        vertical-align: 3px;
+                    }
+                }
+                .author{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 2rem;
+                        margin-right: 1rem;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                    }
+                    p{
+                        color: $softBlue;
+
+                        .author-name:hover{
+                            color: $cyan;
+                            cursor: pointer;
+                        }
+                    }
+                    span{
+                        color: $white;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: $white;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    
+}
+
+
+
